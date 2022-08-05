@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Calculator.2/app/src/main/res/drawable/bot_et1.xml" value="0.1525" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Calculator.2/app/src/main/res/drawable/bot_et2.xml" value="0.1525" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Calculator.2/app/src/main/res/drawable/bot_et3.xml" value="0.1525" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Calculator.2/app/src/main/res/drawable/btn_orange.xml" value="0.1525" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Calculator.2/app/src/main/res/drawable/btn_red.xml" value="0.1525" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Calculator.2/app/src/main/res/drawable/ic_base.xml" value="0.1525" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Calculator.2/app/src/main/res/drawable/ic_base5.xml" value="0.1525" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Calculator.2/app/src/main/res/drawable/ic_base7.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Calculator.2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Calculator.2/app/src/main/res/layout/activity_second2.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_main.xml" value="0.11730072463768115" />
       </map>
     </option>

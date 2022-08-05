@@ -1,31 +1,49 @@
 package com.geektech.calculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.QuickContactBadge;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
     private TextView tvResult;
     private Integer first, second;
     private Boolean isOperationClick;
     private String operation;
+    private Integer editText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tvResult = findViewById(R.id.tvResult);
-    }
 
-    public void onNumberClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_one:
-            //    if (tvResult.getText().toString().equals("0")) {
+        findViewById(R.id.btn_send).setOnClickListener(view -> {
+            TextView textView=findViewById(R.id.tvResult);
+            String text=textView.getText().toString();
+            Intent intent=new Intent(MainActivity.this,SecondActivity2.class);
+            startActivity(intent);
+
+        });
+
+        //
+        //
+
+    }
+             public void onNumberClick(@NonNull View view){
+          switch (view.getId()){
+              case R.id.btn_one:
+               //   if(tvResult.getText().toString().equals("0")){
               //      tvResult.setText("1");
              //   } else if (isOperationClick) {
               //      tvResult.setText("1");
@@ -83,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_minus:
                 first=Integer.parseInt(tvResult.getText().toString());
                 operation = "-";
+                break;
             case R.id.btn_mult:
                 first = Integer.parseInt(tvResult.getText().toString());
                 operation="*";
@@ -127,6 +146,11 @@ public class MainActivity extends AppCompatActivity {
                         Integer div=first/second;
                         tvResult.setText(div.toString());
                         break;
+                    case "send":
+                        second=Integer.parseInt((tvResult.getText().toString()));
+                        break;
+                    default:;
+
                 }
 
         }

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="78dp"
+        android:background="@color/dark_grey"
+        android:drawableStart="@drawable/ic_base"
+        android:drawableEnd="@drawable/ic_base5"
+        android:padding="12dp"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="144dp"
+        android:layout_marginBottom="14dp"
+        android:text="Policies"
+        android:textColor="@color/dark_grey"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/username"/>
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/bot_et1"
+        android:hint="Policy "
+        android:padding="24dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/pc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bot_et3"
+        android:hint="Product Category"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/oc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bot_et3"
+        android:hint="Origin Country"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/pc" />
+
+
+    <EditText
+        android:id="@+id/brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bot_et2"
+        android:hint="Brand"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/oc" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Policies"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toTopOf="@+id/enter"
+        android:paddingBottom="24dp"
+        android:paddingHorizontal="114dp"
+        android:id="@+id/tv_current"/>
+
+
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/btn_red"
+        android:padding="10dp"
+        android:text="Enter"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintTop_toBottomOf="@id/brand"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
